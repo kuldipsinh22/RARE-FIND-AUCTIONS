@@ -3,7 +3,7 @@
 # dependencies
 rfa_node/node_modules
 rfa_admin/node_modules
-rfa_admin/node_modules
+rfa_main/node_modules
 /.pnp
 .pnp.js
 
