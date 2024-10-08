@@ -172,7 +172,7 @@ export default function ProductBuy() {
                   <th scope="row">{i++}</th>
                   <td>{bid.user_name}</td>
                   {/* <td>{bid.phone1}</td> */}
-                  <td>{bid.bid_amount}</td>
+                  <td>{bid.bid_amount}</td>``
                 </tr>
               ))}
             </tbody>

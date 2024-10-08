@@ -31,12 +31,17 @@ export const deleteuser = (req, res) => {
 
 export const insertuser = (req, res) => {
   const query =
-    "INSERT INTO users(`user_name`, `phone1`,`user_email`, `password`) values(?)";
+    "INSERT INTO users(`user_name`, `phone1`,`user_email`, `password`, `img`, `state`, `city`, `zipcode`, `address`) values(?)";
   const values = [
     req.body.user_name,
     req.body.phone1,
     req.body.user_email,
     req.body.password,
+    req.file?.filename,
+    req.body.state,
+    req.body.city,
+    req.body.zipcode,
+    req.body.address,
   ];
   console.log(query);
   console.log(values);
