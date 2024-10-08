@@ -68,7 +68,7 @@ export const updateuser = (req, res) => {
     req.body.phone1,
     req.body.user_email,
     req.body.password,
-    req.file?.filename,
+    req.file?.filename || req.body.img,
     req.body.state,
     req.body.city,
     req.body.zipcode,
